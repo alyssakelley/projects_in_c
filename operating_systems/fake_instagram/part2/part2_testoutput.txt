@@ -1,0 +1,85 @@
+Done creating pub()
+Done creating sub()
+Cannot read entry 0 because the queue for Topic #1 is empty
+Cannot read entry 0 because the queue for Topic #1 is empty
+The subscriber found entry #0 in Topic #1
+Cannot read entry 0 because the queue for Topic #2 is empty
+The subscriber found entry #1 in Topic #1
+Entry 0 is not a valid entry.
+The subscriber found entry #2 in Topic #1
+Entry #0 has been dequeued, the next available entry for Topic #2 is #2.
+Entry 3 is not a valid entry.
+Entry 3 is not a valid entry.
+The subscriber found entry #3 in Topic #1
+Entry 0 is not a valid entry.
+Entry #4 has been dequeued, the next available entry for Topic #1 is #6.
+The subscriber found entry #2 in Topic #2
+The subscriber found entry #6 in Topic #1
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry #3 has been dequeued, the next available entry for Topic #2 is #5.
+Entry 7 is not a valid entry.
+Entry 0 is not a valid entry.
+Entry 7 is not a valid entry.
+The subscriber found entry #5 in Topic #2
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Done with the Publisher() function.
+Entry 7 is not a valid entry.
+Entry #6 has been dequeued, the next available entry for Topic #2 is #7.
+
+The Queue is full!
+Done with the Publisher() function.
+Entry 7 is not a valid entry.
+Entry 0 is not a valid entry.
+Entry 7 is not a valid entry.
+The subscriber found entry #7 in Topic #2
+The subscriber found entry #8 in Topic #2
+The subscriber found entry #9 in Topic #2
+The subscriber found entry #10 in Topic #2
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Entry 7 is not a valid entry.
+Done with the Subscriber() function.
+
+Entry 7 is not a valid entry.
+Done with the Subscriber() function.
+
+Done joining pub() and sub()
+Cleanup is done now. Everything is empty.
+
+Done joining clean()
+Done with main!

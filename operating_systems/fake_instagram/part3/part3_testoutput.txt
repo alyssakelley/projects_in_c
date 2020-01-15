@@ -1,0 +1,124 @@
+
+Reading the commands from a file.
+
+topic 0 0 - dont_fill
+topic 1 5 - dogs
+topic 2 5 - cats
+topic 3 5 - fish
+publisher thread 1 reading from animal_pub.txt
+subscriber thread 1 reading from sub1.txt
+Starting!
+
+
+
+Done with creating a publisher.
+Done with creating a subscriber.
+Starting cleanup thread.
+Joining the pub/sub threads.
+Joining publisher reading in animal_pub.txt for thread #0
+Subscriber Thread #1 cannot find entry #0 because Topic #1 (dogs) is empty.
+
+Publisher Thread #0 finished enqueing Topics[1] #0 entry.
+Subscriber Thread #1 found entry #0 in Topic #1 (dogs).
+
+Publisher Thread #0 finished enqueing Topics[1] #1 entry.
+Subscriber Thread #1 found entry #1 in Topic #1 (dogs).
+
+Publisher Thread #0 finished enqueing Topics[1] #2 entry.
+
+Publisher Thread #0 finished enqueing Topics[3] #3 entry.
+Subscriber Thread #1 cannot find entry #0 because Topic #2 (cats) is empty.
+
+Publisher Thread #0 finished enqueing Topics[3] #1 entry.
+Subscriber Thread #1 found entry #2 in Topic #1 (dogs).
+
+Publisher Thread #0 finished enqueing Topics[2] #2 entry.
+Subscriber Thread #1 cannot find entry #0 because it has not been enqueued to Topic #3 (fish) yet.
+
+Publisher Thread #0 finished enqueing Topics[2] #1 entry.
+
+Publisher Thread #0 finished enqueing Topics[3] #2 entry.
+Subscriber Thread #1 cannot find entry #3 because it has not been enqueued to Topic #1 (dogs) yet.
+
+Publisher Thread #0 finished enqueing Topics[2] #3 entry.
+Subscriber Thread #1 cannot find entry #0 because it has been dequeued from Topic #2 (cats), the next available entry is #3.
+
+Publisher Thread #0 finished enqueing Topics[1] #3 entry.
+Subscriber Thread #1 found entry #3 in Topic #1 (dogs).
+
+Publisher Thread #0 finished enqueing Topics[1] #4 entry.
+Subscriber Thread #1 found entry #4 in Topic #1 (dogs).
+
+Publisher Thread #0 finished enqueing Topics[2] #5 entry.
+Subscriber Thread #1 cannot find entry #5 because it has not been enqueued to Topic #1 (dogs) yet.
+
+Publisher Thread #0 finished enqueing Topics[1] #4 entry.
+Subscriber Thread #1 cannot find entry #0 because it has not been enqueued to Topic #3 (fish) yet.
+
+Publisher Thread #0 finished enqueing Topics[1] #6 entry.
+Done with the Publisher() function.
+Subscriber Thread #1 cannot find entry #5 because it has been dequeued from Topic #1 (dogs), the next available entry is #6.
+Joining subscriber reading in sub1.txt for thread #1
+Subscriber Thread #1 found entry #3 in Topic #2 (cats).
+Subscriber Thread #1 found entry #6 in Topic #1 (dogs).
+Subscriber Thread #1 cannot find entry #7 because it has not been enqueued to Topic #1 (dogs) yet.
+Subscriber Thread #1 cannot find entry #7 because it has not been enqueued to Topic #1 (dogs) yet.
+Subscriber Thread #1 cannot find entry #4 because it has been dequeued from Topic #2 (cats), the next available entry is #5.
+Subscriber Thread #1 cannot find entry #7 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #0 because it has not been enqueued to Topic #3 (fish) yet.
+Subscriber Thread #1 cannot find entry #7 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #5 because Topic #2 (cats) is empty.
+Subscriber Thread #1 cannot find entry #7 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #7 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #7 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #5 because Topic #2 (cats) is empty.
+Subscriber Thread #1 cannot find entry #7 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #0 because it has not been enqueued to Topic #3 (fish) yet.
+Subscriber Thread #1 cannot find entry #7 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #5 because Topic #2 (cats) is empty.
+Subscriber Thread #1 cannot find entry #5 because Topic #2 (cats) is empty.
+Subscriber Thread #1 cannot find entry #5 because Topic #2 (cats) is empty.
+Subscriber Thread #1 cannot find entry #5 because Topic #2 (cats) is empty.
+Subscriber Thread #1 cannot find entry #7 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #7 because Topic #1 (dogs) is empty.
+Done with the Subscriber() function.
+
+Starting cleanup thread.
+Cleanup is done now. Everything expired has been dequeued.
+
+Done with creating the thread pool.
+
+
+
+*  *  *  *  *  *  *  *  *  *  Printing the Topics  *  *  *  *  *  *  *  *  *  *
+
+
+
+Topic #0 is empty. It had 0 entires added to it, but they have all been dequeued.
+
+Topic #1 is empty. It had 7 entires added to it, but they have all been dequeued.
+
+Topic #2 is empty. It had 4 entires added to it, but they have all been dequeued.
+
+Topic #3 has 3 current entires. It had 3 entires added to it, but some might have expired and been dequeued.
+
+- - - - - This entry if for Topics[3] - - - - -
+Entrynum: 3
+PhotoURL: FISH0_URL
+PhotoCaption FISH0_CAPTION
+Timestamp: 1559989224
+
+- - - - - This entry if for Topics[3] - - - - -
+Entrynum: 1
+PhotoURL: FISH1_URL
+PhotoCaption FISH1_CAPTION
+Timestamp: 1559989225
+
+- - - - - This entry if for Topics[3] - - - - -
+Entrynum: 2
+PhotoURL: FISH2_URL
+PhotoCaption FISH3_CAPTION
+Timestamp: 1559989230
+
+
+

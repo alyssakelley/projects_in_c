@@ -1,0 +1,80 @@
+Name: Alyssa Kelley
+DUCK ID: alyssak
+STUDENT ID: 951480571
+Project 2 - CIS 415 - Spring 2019
+
+
+Part 1: 30pts. 
+
+	For this part of the project, my understanding was to implement Enqueue, Dequeue and Getentry.
+
+	I have tested part 1 by doing the following as per the grading rubric on Piazza:
+
+	Filled the Topic Queues (I am testing using 3 Topics).
+
+	Read all the entries, and always keeping track of the last entry you read (I specifically do this for Topic 1 to test).
+	Be stopped if you try to add more items then can fit.
+	Empty the queue.
+
+	Fill it again.
+
+	Delete some things.
+
+	Read the "next entry" (continuing to read from where you left off on step 2; note that the entry that you want to read at this point is gone. You should read the tail entry in this case, and return its ID unless the queue is empty, OR you have already read everything up to the head.)
+
+	Read the "next entry" again. This time you should be accessing a valid entry.
+	Be alerted when you try to read an entry that you haven't posted yet.
+
+	When you run my part1, you will see status updated for each step as it is running though the program. I tested this on the VM and got the expected results. I put an example output file in my part1 subdirectory named example_part1_output.txt.
+ 
+
+
+Part 2: 30pts. 
+
+    create subscriber and publisher thread, plus a clean-up thread. 
+
+        (1) Create every thread and pass is a unique string argument 
+
+        (1) Have each thread wait for a flag from Main. (EXIT_P, EXIT_S, and EXIT_C for the different threads)
+
+        (2) All threads go, printing updates to standard input. 
+
+        (3) Threads exit, and there is a print status update to stdin when each exits.
+
+        I tested this on the VM and got the expected results. I put an example output file in my part1 subdirectory named example_part2_output.txt.
+
+
+
+Part 3: 15pts. 
+
+    Modify Main to interpret a command file and create Topic Queues, Publisher threads, and Subscriber Threads. 
+
+    I tested this by creating multiple of my own mainfiles, but the specific test mainfile that I am submitting is filled with animal topics and named animal_mainfile.txt. I have tested the same commands using standard input as well, and I get the same output. Please note: I do not have seperate structs for my publisher and subscribers. I save them both to the thread_elements struct which is part of my global array. This means that the publisher and subscriber number might not start at 0, and they might not be contiguous. It depends on the way they are added in the mainfile / stdin. For example, in my animal_mainfile.txt, I add publisher first so it gets the thread_id = 0, then I add a subscriber which gets the thread_id = 1, and I add another subscriber and it gets the thread_id = 2, but if I added another publisher, it would get the thread_id = 3 even though the previous publisher thread_id = 0.
+
+    I tested this on the VM and got the expected results. I put an example output file in my part1 subdirectory named example_part3_output.txt.
+
+
+
+Part 4: 15pts. 
+
+    Modify Threads to interpret a command to create Topic Queues and publisher/subscriber threads.
+
+    I was already implemmenting my publisher and subscriber thread functions to loop through their thread file in parts 2 and 3, so I did not have to change much here, but I do have extensive print statements give stdin print updates to say what step the program is at, and what the threads are currently doing. 
+
+    I tested this on the VM and got the expected results. I put an example output file in my part1 subdirectory named example_part4_output.txt.
+
+
+
+Part 5: 15pts. 
+
+    Modify subscribers to create a static web-page based on the content that they read.
+
+    I tested this on the VM and got the expected results. I put an example output file in my part1 subdirectory named example_part3_output.txt. Note: In my animal_publisher.txt file, I have multiple entries of the same images for the topics, so this is why there may be multiple images of the same picure, but the captions are mostly different in some way for each.
+ 
+ 
+
+ I tested my code with multiple mainfiles, subscriber and publisher files. I am using one mainfile for animal topics for parts 3, 4, 5, and I have different subscriber and publisher files for the different parts. Please read my README.pdf going over the entire part of the project in great detail and extensively on how I tested each part. I also include a README.md for each file going over each part specifically, and how I tested it. I also include a sample output for each part, and a specific Makefile for each so compiling it is straightforward. All the files for the individual parts are in their subdirectory and each directory has all the extra files you need to execute the part.
+
+ As I mentioned in the comments on my code, in the README's, and in the PDF, absolutely no code was copied, but ideas were shared. Specifically, I worked on this with Anne Glickenhaus, Miguel Hernandez, and Zac Bower.
+
+ I believe that each part of this project is working and performing exactly as we were told and instructed according to the Piazza rubric I have quoted above. I did not test this code against valgrind since we were told we would not have to. I also use the flags to specify which version of C it is using, and to ignore all the warning, which we were also told we would not get marked down for.

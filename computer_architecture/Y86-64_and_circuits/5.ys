@@ -1,0 +1,128 @@
+# Author: Alyssa Kelley
+# Assignment 5
+# Source: I worked on this assignment with Miguel Hernan, Anne Glickenhause, and Kristine Stecker.
+
+# Execution begins at address 0 
+    .pos 0
+    irmovq stack, %rsp      # This sets up the stack pointer
+    call main               # This executes the main program
+    halt                    # This terminates the program 
+
+# Array of 10 elements
+    .align 8
+array:  
+    .quad 0x0000000000000007
+    .quad 0x0000000000000001
+    .quad 0x0000000000000002
+    .quad 0x0000000000000003
+    .quad 0x0000000000000008
+    .quad 0x000000000000000A
+    .quad 0x0000000000000009
+    .quad 0x0000000000000006
+    .quad 0x0000000000000004
+    .quad 0x0000000000000005
+
+main:   
+    irmovq array, %rdi
+    irmovq $10, %rsi         # $10 is the length of the array stored in rsi
+    call selectionSort       # selectionSort(array)
+    ret
+
+swap:
+    mrmovq    (%rdi), %rax
+    mrmovq    (%rsi), %rdx
+    rmmovq    %rdx, (%rdi)
+    rmmovq    %rax, (%rsi)
+    ret
+
+
+selectionSort:
+    
+    irmovq $1, %r12 
+    rrmovq %rsi, %r11
+    subq %r12, %r11     # This looks like the c code: len--
+    irmovq $0, %rcx     # This is setting i = 0 for the c code.
+    jmp L1
+
+
+    L2:  
+        # Inner loop of the c code for selectionSort.
+
+        # C code: Get array[j]
+        rrmovq %rdx, %r14
+        addq   %r14, %r14
+        addq   %r14, %r14
+        addq   %r14, %r14       # Adding 3 times = multiplied by 8 for the sizeof(long)
+        addq   %rdi, %r14       # Offset from &array
+
+        # C code: Get array[min_idx]
+        rrmovq %rbx, %r8
+        addq %r8, %r8
+        addq %r8, %r8
+        addq %r8, %r8           # Adding 3 times = multiplied by 8
+        addq %rdi, %r8          # Offset from &array
+
+        # Dereference
+        mrmovq (%r14), %r14
+        mrmovq (%r8), %r8
+
+        pushq %r14
+        subq  %r8, %r14         # C code: if(array[j] < array[min_idx])
+        popq  %r14
+        jge L3
+        rrmovq %rdx, %rbx       # C code: min_idx = j
+
+    L3:
+        addq %r12, %rdx         # C code: j++
+        pushq %rdx
+        subq %rsi, %rdx
+        popq  %rdx
+        jl L2
+
+        pushq %rcx
+        subq  %rbx, %rcx        # C code: if(i==min_idx)
+        popq  %rcx
+        je   L4
+
+        # This is preparing for swap
+        pushq %rdi
+        pushq %rsi
+        rrmovq %rdi, %rsi
+
+        # This gets array[min_idx_idx]
+        rrmovq %rbx, %r13
+        addq %r13, %r13
+        addq %r13, %r13
+        addq %r13, %r13
+        addq %r13, %rdi
+
+        # This gets array[i]
+        rrmovq %rcx, %r13
+        addq %r13, %r13
+        addq %r13, %r13
+        addq %r13, %r13
+        addq %r13, %rsi
+
+        # C code: swap(array[min_idx],array[i])
+        call swap
+        popq  %rsi
+        popq  %rdi
+
+    L4:
+        addq %r12, %rcx     # C code: i++
+        pushq %rcx
+        subq %r11, %rcx     # C code: if(i < len)
+        popq %rcx
+        jl L1
+
+    L1:
+        # This is the outer loop for selectionSort
+        rrmovq %rcx, %rbx  # min_idx = i
+        rrmovq %rcx, %rdx  # j = i
+        addq  %r12, %rdx   # j++
+        jmp L2
+ret
+
+# Stack starts here and grows to lower addresses
+  .pos 0x220
+stack:

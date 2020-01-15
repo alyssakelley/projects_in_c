@@ -1,0 +1,5 @@
+cat test_LC.txt
+echo "Alyssa Kelley"
+ls -l
+echo "done"
+./cpuboundtest

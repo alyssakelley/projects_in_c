@@ -1,0 +1,266 @@
+
+* * * * * Making sure that all the Queues are starting off empty. * * * * *
+
+Topic[0] - 
+The Queue is empty!
+
+Topic[1] - 
+The Queue is empty!
+
+Topic[2] - 
+The Queue is empty!
+
+* * * * * Filling all the entries in all of the Topic Queues * * * * *
+
+The Queue is NOT full. There are 5 more entry spaces left.
+
+The Queue is NOT full. There are 4 more entry spaces left.
+
+The Queue is NOT full. There are 3 more entry spaces left.
+
+The Queue is NOT full. There are 2 more entry spaces left.
+
+The Queue is NOT full. There are 1 more entry spaces left.
+
+The Queue is full!
+
+- - - - - This entry if for Topics[0] - - - - -
+Entrynum: 0
+PhotoURL: https:/fake_url_0
+PhotoCaption Fake Caption 0
+Timestamp: 1559985500
+
+- - - - - This entry if for Topics[0] - - - - -
+Entrynum: 1
+PhotoURL: https:/fake_url_1
+PhotoCaption Fake Caption 1
+Timestamp: 1559985501
+
+- - - - - This entry if for Topics[0] - - - - -
+Entrynum: 2
+PhotoURL: https:/fake_url_2
+PhotoCaption Fake Caption 2
+Timestamp: 1559985502
+
+- - - - - This entry if for Topics[0] - - - - -
+Entrynum: 3
+PhotoURL: https:/fake_url_3
+PhotoCaption Fake Caption 3
+Timestamp: 1559985503
+
+- - - - - This entry if for Topics[0] - - - - -
+Entrynum: 4
+PhotoURL: https:/fake_url_4
+PhotoCaption Fake Caption 4
+Timestamp: 1559985504
+
+The Queue is NOT full. There are 5 more entry spaces left.
+
+The Queue is NOT full. There are 4 more entry spaces left.
+
+The Queue is NOT full. There are 3 more entry spaces left.
+
+The Queue is NOT full. There are 2 more entry spaces left.
+
+The Queue is NOT full. There are 1 more entry spaces left.
+
+The Queue is full!
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 0
+PhotoURL: https:/fake_url_0
+PhotoCaption Fake Caption 0
+Timestamp: 1559985506
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 1
+PhotoURL: https:/fake_url_1
+PhotoCaption Fake Caption 1
+Timestamp: 1559985507
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 2
+PhotoURL: https:/fake_url_2
+PhotoCaption Fake Caption 2
+Timestamp: 1559985508
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 3
+PhotoURL: https:/fake_url_3
+PhotoCaption Fake Caption 3
+Timestamp: 1559985509
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 4
+PhotoURL: https:/fake_url_4
+PhotoCaption Fake Caption 4
+Timestamp: 1559985510
+
+The Queue is NOT full. There are 5 more entry spaces left.
+
+The Queue is NOT full. There are 4 more entry spaces left.
+
+The Queue is NOT full. There are 3 more entry spaces left.
+
+The Queue is NOT full. There are 2 more entry spaces left.
+
+The Queue is NOT full. There are 1 more entry spaces left.
+
+The Queue is full!
+
+- - - - - This entry if for Topics[2] - - - - -
+Entrynum: 0
+PhotoURL: https:/fake_url_0
+PhotoCaption Fake Caption 0
+Timestamp: 1559985512
+
+- - - - - This entry if for Topics[2] - - - - -
+Entrynum: 1
+PhotoURL: https:/fake_url_1
+PhotoCaption Fake Caption 1
+Timestamp: 1559985513
+
+- - - - - This entry if for Topics[2] - - - - -
+Entrynum: 2
+PhotoURL: https:/fake_url_2
+PhotoCaption Fake Caption 2
+Timestamp: 1559985514
+
+- - - - - This entry if for Topics[2] - - - - -
+Entrynum: 3
+PhotoURL: https:/fake_url_3
+PhotoCaption Fake Caption 3
+Timestamp: 1559985515
+
+- - - - - This entry if for Topics[2] - - - - -
+Entrynum: 4
+PhotoURL: https:/fake_url_4
+PhotoCaption Fake Caption 4
+Timestamp: 1559985516
+
+* * * * * Checking if the Queues for all Topics are full or empty. * * * * *
+
+This is for Topic[0]
+
+The Queue is full!
+
+The Queue is NOT empty, it has 5 elements in it.
+
+This is for Topic[1]
+
+The Queue is full!
+
+The Queue is NOT empty, it has 5 elements in it.
+
+This is for Topic[2]
+
+The Queue is full!
+
+The Queue is NOT empty, it has 5 elements in it.
+
+* * * * * Reading all of the entries for Topic 1 * * * * *
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 0
+PhotoURL: https:/fake_url_0
+PhotoCaption Fake Caption 0
+Timestamp: 1559985506
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 1
+PhotoURL: https:/fake_url_1
+PhotoCaption Fake Caption 1
+Timestamp: 1559985507
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 2
+PhotoURL: https:/fake_url_2
+PhotoCaption Fake Caption 2
+Timestamp: 1559985508
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 3
+PhotoURL: https:/fake_url_3
+PhotoCaption Fake Caption 3
+Timestamp: 1559985509
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 4
+PhotoURL: https:/fake_url_4
+PhotoCaption Fake Caption 4
+Timestamp: 1559985510
+This is the last topicentry we read from Topic 1 - 4
+
+* * * * * Emptying all the entries in Topic Queue 1 * * * * *
+
+* * * * * Filling all the entries for Topic Queue 1 (again) * * * * *
+
+The Queue is NOT full. There are 5 more entry spaces left.
+
+The Queue is NOT full. There are 4 more entry spaces left.
+
+The Queue is NOT full. There are 3 more entry spaces left.
+
+The Queue is NOT full. There are 2 more entry spaces left.
+
+The Queue is NOT full. There are 1 more entry spaces left.
+
+The Queue is full!
+
+* * * * * Now deleting two entires from Topic Queue 1 * * * * *
+
+* * * * * Now trying to read #4 entry, but this entry has been dequeued * * * * *
+
+The Queue is NOT empty, it has 3 elements in it.
+The item you were trying to read has been dequeued, the next available entry is #7.
+	This is now the last read entry: 7.
+
+* * * * * Now trying to read #7 entry, but this entry should be valid * * * * *
+
+The Queue is NOT empty, it has 3 elements in it.
+Here is your entry.
+	This is now the last read entry: 8
+
+* * * * * Now trying to read #8 entry, and this entry should also be valid * * * * *
+
+The Queue is NOT empty, it has 3 elements in it.
+Here is your entry.
+	This is now the last read entry: 9
+
+* * * * * Now trying to read #9 entry, and this entry should also be valid * * * * *
+
+The Queue is NOT empty, it has 3 elements in it.
+Here is your entry.
+	This is now the last read entry: 10
+
+* * * * * Now trying to read #10 entry, and this entry has not been enqueued yet should is not valid! * * * * *
+
+The Queue is NOT empty, it has 3 elements in it.
+This is not a valid entry.
+	This is now the last read entry: 10
+
+
+
+* * * * * Final reading for the current entries in Topic 1 * * * * *
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 7
+PhotoURL: https:/fake_url_2
+PhotoCaption Fake Caption 2
+Timestamp: 1559985520
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 8
+PhotoURL: https:/fake_url_3
+PhotoCaption Fake Caption 3
+Timestamp: 1559985521
+
+- - - - - This entry if for Topics[1] - - - - -
+Entrynum: 9
+PhotoURL: https:/fake_url_4
+PhotoCaption Fake Caption 4
+Timestamp: 1559985522
+
+This is the last topicentry we read from Topic 1 - 9
+This is the front: 7 and the back: 10.
+Currently has 3 entires, but 10 have been added throughout.

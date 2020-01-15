@@ -1,0 +1,385 @@
+This should run for 9-10 seconds, never with <pid,number> and <pid,number2> , number != number2
+tester 94974: with 0 of 7
+tester 94973: with 0 of 6
+tester 94972: with 0 of 5
+tester 94975: with 0 of 8
+tester 94976: with 0 of 9
+tester 94972: with 1 of 5
+tester 94973: with 1 of 6
+tester 94974: with 1 of 7
+tester 94975: with 1 of 8
+tester 94976: with 1 of 9
+tester 94972: with 2 of 5
+tester 94973: with 2 of 6
+tester 94974: with 2 of 7
+tester 94975: with 2 of 8
+tester 94976: with 2 of 9
+tester 94972: with 3 of 5
+tester 94973: with 3 of 6
+tester 94974: with 3 of 7
+tester 94975: with 3 of 8
+tester 94976: with 3 of 9
+tester 94972: with 4 of 5
+tester 94973: with 4 of 6
+tester 94974: with 4 of 7
+tester 94975: with 4 of 8
+tester 94976: with 4 of 9
+tester 94972: with 5 of 5
+tester 94973: with 5 of 6
+tester 94974: with 5 of 7
+tester 94975: with 5 of 8
+tester 94976: with 5 of 9
+tester 94973: with 6 of 6
+tester 94974: with 6 of 7
+tester 94975: with 6 of 8
+tester 94976: with 6 of 9
+tester 94974: with 7 of 7
+tester 94975: with 7 of 8
+tester 94976: with 7 of 9
+tester 94975: with 8 of 8
+tester 94976: with 8 of 9
+tester 94976: with 9 of 9
+StartingStartingStartingStartingStartingAlarm
+Proc:		0x7fe252402ad0
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	5
+		PID:	94972
+		State:	Paused
+		Next:0x7fe252402ad0
+Proc:		0x7fe252402af0
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	6
+		PID:	94973
+		State:	Paused
+		Next:0x7fe252402af0
+Proc:		0x7fe252402b10
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	7
+		PID:	94974
+		State:	Paused
+		Next:0x7fe252402b10
+Proc:		0x7fe252402b30
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	8
+		PID:	94975
+		State:	Paused
+		Next:0x7fe252402b30
+Proc:		0x7fe252402b50
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	9
+		PID:	94976
+		State:	Paused
+		Next:0x7fe252402b50
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Stopping: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94972
+Alarm
+Exited?: 1
+Set State Done: 94972
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94973
+Alarm
+Stopping: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94973
+Alarm
+Exited?: 1
+Set State Done: 94973
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94974
+Alarm
+Stopping: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94974
+Alarm
+Exited?: 1
+Set State Done: 94974
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94975
+Alarm
+Stopping: 94975
+Resuming: 94976
+Alarm
+Stopping: 94976
+Resuming: 94975
+Alarm
+Exited?: 1
+Set State Done: 94975
+Resuming: 94976
+Alarm
+Exited?: 1
+Set State Done: 94976
+Proc:		0x7fe252402ad0
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	5
+		PID:	94972
+		State:	Exited
+		Next:0x7fe252402ad0
+Proc:		0x7fe252402af0
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	6
+		PID:	94973
+		State:	Exited
+		Next:0x7fe252402af0
+Proc:		0x7fe252402b10
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	7
+		PID:	94974
+		State:	Exited
+		Next:0x7fe252402b10
+Proc:		0x7fe252402b30
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	8
+		PID:	94975
+		State:	Exited
+		Next:0x7fe252402b30
+Proc:		0x7fe252402b50
+		CMD:	./tester
+		Args:
+		Arg:	./tester
+		Arg:	9
+		PID:	94976
+		State:	Exited
+		Next:0x7fe252402b50

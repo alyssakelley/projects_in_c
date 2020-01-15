@@ -1,0 +1,3 @@
+cat test_LC.txt
+echo "Alyssa Kelley"
+echo "done"

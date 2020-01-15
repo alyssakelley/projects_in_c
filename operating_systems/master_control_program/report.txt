@@ -1,0 +1,49 @@
+My parts 1-4 for project 1 should all have the correct solutions and is resulting in, what I beleive to be, the correct outputs when running the different test cases provided. 
+
+When running it alongside CPUbound.c and IObound.c, the numbers are slightly different that the example output posted on Piazza, but that seems to be what is supposed to happen and my numbers and still simular to those expected. 
+
+Part 1 - Launch Workload - This part was checked against valtest.sh with no memory leaks or errors, and was test against all the text files, and goodtest.sh and badtest.sh which provided an output which seemed to be what is expected. I do not have any additional print statements in this part, those extra print statements are added in at Part 3, but could be used in this part as well.
+
+[6] Working Process launder - Yes
+[1] Successfully compiles - Yes
+[1] Compiles with no warnings - Yes
+[1] Successfully links - Yes (My makefile links the .c to the .h)
+[1] Links with no warnings - Yes
+[6] Works correctly - I think so as explained above :) 
+[4] Valgrind reports no memory errors - Yes
+
+Part 2 - Controlled launch - This part was checked against valtest.sh with no memory leaks or errors, and was test against all the text files, and goodtest.sh and badtest.sh which provided an output which seemed to be what is expected. I do not have any additional print statements in this part, those extra print statements are added in at Part 3, but could be used in this part as well.
+
+[6] Working Controlled launch - Yes
+[1] Successfully compiles - Yes
+[1] Compiles with no warnings - Yes
+[1] Successfully links - Yes (My makefile links the .c to the .h)
+[1] Links with no warnings - Yes
+[6] Works correctly - I think so as explained above :) 
+[4] Valgrind reports no memory errors - Yes
+
+Part 3 - Time Slice Scheduler - This part was checked against valtest.sh with no memory leaks or errors, and was test against all the text files, and goodtest.sh and badtest.sh which provided an output which seemed to be what is expected. This part is where I added the print statements that were up to us to pick the format. I had my print statements generally mimic the one's from the Piazza example, but I think my status updates are more frequent.
+[10] Working Time Slice Schedular - Yes
+[1] Successfully compiles - Yes
+[1] Compiles with no warnings - Yes
+[1] Successfully links - Yes (My makefile links the .c to the .h)
+[1] Links with no warnings - Yes
+[10] Works correctly - I think so as explained above :) 
+[4] Valgrind reports no memory errors - Yes
+
+Part 4 - Gather Process Information - This part was checked against valtest.sh with no memory leaks or errors, and was test against all the text files, and goodtest.sh and badtest.sh which provided an output which seemed to be what is expected. I use the same print status updates as in Part 3 and I added the usertime, and systime print update with is encapsulated by ******** before and adter it prints out the /proc/PID/stat folder name, and then the usertime, systemtime, and the Status variable which should always be R because I had this printing be called everytime the process is running, and not the last process to finish. I also ran part4 against CPUbound.c and IObound.c which, as I mentioned above, has slightly different numbers than the example, which I believe is intended. 
+[6] Working Process launder - Yes
+[1] Successfully compiles - Yes
+[1] Compiles with no warnings - Yes
+[1] Successfully links - Yes (My makefile links the .c to the .h)
+[1] Links with no warnings - Yes
+[6] Works correctly - I think so as explained above :) 
+[4] Valgrind reports no memory errors - Yes
+
+Once again, when each part is checked against valgrind for memory issues, these test cases showed everything was free'd that was malloced so my solution should be correct in the memory allocation as well. 
+
+As I mentioned in comments on the code, I worked on this project with Anne Glickenhaus, Quinn Milionis, Luke Peyralans, and Zach Bower. Absolutely no code was copied, but ideas were shared. 
+
+I also used the code examples from Roscoe and Matt in lab. 
+
+I did not do the extra credit for part 5 - Controlled Launch.

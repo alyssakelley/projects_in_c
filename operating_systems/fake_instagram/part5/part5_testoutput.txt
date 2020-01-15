@@ -1,0 +1,240 @@
+
+Reading the commands from a file.
+
+topic 0 0 - dont_fill
+topic 1 5 - dogs
+topic 2 5 - cats
+topic 3 5 - fish
+publisher thread 1 reading from animal_pub.txt
+subscriber thread 1 reading from sub1.txt
+subscriber thread 2 reading from sub2.txt
+Starting!
+
+
+
+Done with creating a publisher.
+Created the HTML file for Topic #0 (dont_fill) for Subscriber #1 and saved it as: Topic_dont_fill_from_sub1.txt.html
+Created the HTML file for Topic #1 (dogs) for Subscriber #1 and saved it as: Topic_dogs_from_sub1.txt.html
+Created the HTML file for Topic #2 (cats) for Subscriber #1 and saved it as: Topic_cats_from_sub1.txt.html
+Created the HTML file for Topic #3 (fish) for Subscriber #1 and saved it as: Topic_fish_from_sub1.txt.html
+Done with creating a subscriber.
+Created the HTML file for Topic #0 (dont_fill) for Subscriber #2 and saved it as: Topic_dont_fill_from_sub2.txt.html
+Created the HTML file for Topic #1 (dogs) for Subscriber #2 and saved it as: Topic_dogs_from_sub2.txt.html
+Created the HTML file for Topic #2 (cats) for Subscriber #2 and saved it as: Topic_cats_from_sub2.txt.html
+Created the HTML file for Topic #3 (fish) for Subscriber #2 and saved it as: Topic_fish_from_sub2.txt.html
+Done with creating a subscriber.
+Starting cleanup thread.
+Joining the pub/sub threads.
+Joining publisher reading in animal_pub.txt for thread #0
+
+Publisher Thread #0 finished enqueing Topics[2] #0 entry.
+Subscriber Thread #1 cannot find entry #0 because Topic #1 (dogs) is empty.
+Subscriber Thread #2 cannot find entry #0 because Topic #1 (dogs) is empty.
+
+Publisher Thread #0 finished enqueing Topics[1] #1 entry.
+
+Publisher Thread #0 finished enqueing Topics[3] #1 entry.
+Subscriber Thread #1 cannot find entry #0 because it has not been enqueued to Topic #1 (dogs) yet.
+Subscriber Thread #2 found entry #0 in Topic #2 (cats).
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_cats_from_sub2.txt.html 
+	Topic # 2 (cats) - Entry #0 contents:
+		URL = https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = White and Grey Kitten on Brown and Black Leopard Print Textile
+
+
+Publisher Thread #0 finished enqueing Topics[1] #1 entry.
+
+Publisher Thread #0 finished enqueing Topics[2] #2 entry.
+Subscriber Thread #1 found entry #0 in Topic #1 (dogs).
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_dogs_from_sub1.txt.html 
+	Topic # 1 (dogs) - Entry #0 contents:
+		URL = https://images.pexels.com/photos/434090/pexels-photo-434090.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = White and Black Siberian Husky
+
+Subscriber Thread #2 cannot find entry #0 because it has not been enqueued to Topic #3 (fish) yet.
+
+Publisher Thread #0 finished enqueing Topics[3] #2 entry.
+
+Publisher Thread #0 finished enqueing Topics[2] #2 entry.
+Subscriber Thread #2 found entry #1 in Topic #1 (dogs).
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_dogs_from_sub2.txt.html 
+	Topic # 1 (dogs) - Entry #1 contents:
+		URL = https://images.pexels.com/photos/1663421/pexels-photo-1663421.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = Close-Up Photo of Dog Wearing Golden Crown
+
+Subscriber Thread #1 cannot find entry #2 because it has not been enqueued to Topic #1 (dogs) yet.
+
+Publisher Thread #0 finished enqueing Topics[1] #3 entry.
+
+Publisher Thread #0 finished enqueing Topics[3] #3 entry.
+Subscriber Thread #1 cannot find entry #2 because it has been dequeued from Topic #1 (dogs), the next available entry is #3.
+Subscriber Thread #2 cannot find entry #1 because it has been dequeued from Topic #2 (cats), the next available entry is #2.
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_cats_from_sub2.txt.html 
+	Topic # 2 (cats) - Entry #2 contents:
+		URL = https://images.pexels.com/photos/259803/pexels-photo-259803.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = White and Gray Cat (1)
+
+
+Publisher Thread #0 finished enqueing Topics[2] #3 entry.
+
+Publisher Thread #0 finished enqueing Topics[3] #4 entry.
+Subscriber Thread #1 found entry #3 in Topic #1 (dogs).
+Subscriber Thread #2 cannot find entry #0 because it has been dequeued from Topic #3 (fish), the next available entry is #2.
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_fish_from_sub2.txt.html 
+	Topic # 3 (fish) - Entry #2 contents:
+		URL = https://images.pexels.com/photos/2289409/pexels-photo-2289409.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = School Of Fish
+
+
+Publisher Thread #0 finished enqueing Topics[3] #4 entry.
+
+Publisher Thread #0 finished enqueing Topics[2] #5 entry.
+Subscriber Thread #1 found entry #2 in Topic #2 (cats).
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_cats_from_sub1.txt.html 
+	Topic # 2 (cats) - Entry #2 contents:
+		URL = https://images.pexels.com/photos/259803/pexels-photo-259803.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = White and Gray Cat (1)
+
+Subscriber Thread #2 cannot find entry #4 because it has not been enqueued to Topic #1 (dogs) yet.
+
+Publisher Thread #0 finished enqueing Topics[1] #5 entry.
+Subscriber Thread #2 found entry #3 in Topic #2 (cats).
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_cats_from_sub2.txt.html 
+	Topic # 2 (cats) - Entry #3 contents:
+		URL = https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = Photo of Gray Cat Looking Up Against Black Background
+
+Subscriber Thread #1 found entry #2 in Topic #3 (fish).
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_fish_from_sub1.txt.html 
+	Topic # 3 (fish) - Entry #2 contents:
+		URL = https://images.pexels.com/photos/2289409/pexels-photo-2289409.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = School Of Fish
+
+
+Publisher Thread #0 finished enqueing Topics[1] #4 entry.
+Subscriber Thread #1 cannot find entry #4 because it has been dequeued from Topic #1 (dogs), the next available entry is #5.
+Subscriber Thread #2 found entry #3 in Topic #3 (fish).
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_fish_from_sub2.txt.html 
+	Topic # 3 (fish) - Entry #3 contents:
+		URL = https://images.pexels.com/photos/2156311/pexels-photo-2156311.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = Blue Discus Fish
+
+
+Publisher Thread #0 finished enqueing Topics[3] #5 entry.
+
+Publisher Thread #0 finished enqueing Topics[2] #5 entry.
+Subscriber Thread #1 cannot find entry #4 because it has been dequeued from Topic #2 (cats), the next available entry is #5.
+Subscriber Thread #2 found entry #5 in Topic #1 (dogs).
+
+Publisher Thread #0 finished enqueing Topics[1] #5 entry.
+Subscriber Thread #1 found entry #4 in Topic #3 (fish).
+
+
+{Filling in the HTML file for this entry}
+	Adding to file: Topic_fish_from_sub1.txt.html 
+	Topic # 3 (fish) - Entry #4 contents:
+		URL = https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500 
+		CAPTION = Clown Fish Swimming (3)
+
+Subscriber Thread #2 found entry #5 in Topic #2 (cats).
+
+Publisher Thread #0 finished enqueing Topics[1] #5 entry.
+Subscriber Thread #1 cannot find entry #6 because it has not been enqueued to Topic #1 (dogs) yet.
+Subscriber Thread #2 cannot find entry #5 because it has not been enqueued to Topic #3 (fish) yet.
+
+Publisher Thread #0 finished enqueing Topics[2] #6 entry.
+Done with the Publisher() function.
+Subscriber Thread #1 found entry #6 in Topic #2 (cats).
+Subscriber Thread #2 cannot find entry #6 because it has not been enqueued to Topic #1 (dogs) yet.
+Joining subscriber reading in sub1.txt for thread #1
+Subscriber Thread #2 cannot find entry #7 because it has not been enqueued to Topic #2 (cats) yet.
+Subscriber Thread #1 cannot find entry #5 because it has not been enqueued to Topic #3 (fish) yet.
+Subscriber Thread #1 cannot find entry #6 because it has not been enqueued to Topic #1 (dogs) yet.
+Subscriber Thread #2 cannot find entry #5 because it has not been enqueued to Topic #3 (fish) yet.
+Subscriber Thread #2 cannot find entry #0 because Topic #0 (dont_fill) is empty.
+Subscriber Thread #1 cannot find entry #6 because it has not been enqueued to Topic #1 (dogs) yet.
+Subscriber Thread #2 cannot find entry #6 because it has not been enqueued to Topic #1 (dogs) yet.
+Done with the Subscriber() function.
+
+Subscriber Thread #1 cannot find entry #7 because it has not been enqueued to Topic #2 (cats) yet.
+Subscriber Thread #1 cannot find entry #5 because it has not been enqueued to Topic #3 (fish) yet.
+Subscriber Thread #1 cannot find entry #6 because it has not been enqueued to Topic #1 (dogs) yet.
+Subscriber Thread #1 cannot find entry #7 because it has not been enqueued to Topic #2 (cats) yet.
+Subscriber Thread #1 cannot find entry #5 because Topic #3 (fish) is empty.
+Subscriber Thread #1 cannot find entry #6 because it has not been enqueued to Topic #1 (dogs) yet.
+Subscriber Thread #1 cannot find entry #6 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #6 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #6 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #6 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #6 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #6 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #6 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #6 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #6 because Topic #1 (dogs) is empty.
+Subscriber Thread #1 cannot find entry #7 because it has not been enqueued to Topic #2 (cats) yet.
+Subscriber Thread #1 cannot find entry #5 because Topic #3 (fish) is empty.
+Done with the Subscriber() function.
+
+Joining subscriber reading in sub2.txt for thread #2
+Starting cleanup thread.
+Cleanup is done now. Everything expired has been dequeued.
+
+Done with creating the thread pool.
+Done creating the html file: Topic_dont_fill_from_sub1.txt.html
+Done creating the html file: Topic_dogs_from_sub1.txt.html
+Done creating the html file: Topic_cats_from_sub1.txt.html
+Done creating the html file: Topic_fish_from_sub1.txt.html
+Done creating the html file: Topic_dont_fill_from_sub2.txt.html
+Done creating the html file: Topic_dogs_from_sub2.txt.html
+Done creating the html file: Topic_cats_from_sub2.txt.html
+Done creating the html file: Topic_fish_from_sub2.txt.html
+
+
+
+*  *  *  *  *  *  *  *  *  *  Printing the Topics  *  *  *  *  *  *  *  *  *  *
+
+
+
+Topic #0 is empty. It had 0 entires added to it, but they have all been dequeued.
+
+Topic #1 is empty. It had 6 entires added to it, but they have all been dequeued.
+
+Topic #2 has 1 current entires. It had 6 entires added to it, but some might have expired and been dequeued.
+
+- - - - - This entry if for Topics[2] - - - - -
+Entrynum: 6
+PhotoURL: https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500
+PhotoCaption Assorted Color Kittens (2)
+Timestamp: 1559989500
+
+Topic #3 is empty. It had 5 entires added to it, but they have all been dequeued.
+
+
+

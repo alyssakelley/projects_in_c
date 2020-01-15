@@ -1,0 +1,12 @@
+create topic 0 dont_fill 0
+create topic 1 dogs 5
+create topic 2 cats 5
+create topic 3 fish 5
+add publisher animal_pub.txt
+add subscriber sub1.txt
+add subscriber sub2.txt
+query topics
+query publishers
+query subscribers
+Delta 15
+start
